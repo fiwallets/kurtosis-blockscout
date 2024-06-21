@@ -41,12 +41,12 @@ def run(plan, args):
 
     plan.print(bs_service.ports.values())
 
-    stack_info = {
-        "api_host": bs_service.ip_address,
-        "api_port": bs_service.ports.values()[0].number,
-        "stats_host": stats_service.ip_address,
-        "stats_port": stats_service.ports.values()[0].number,
-        "visualize_host": visualize_service.ip_address,
-        "visualize_port": visualize_service.ports.values()[0].number,
-    }
-    import_module(frontend).run(plan, cfg.get("FRONTEND"), stack_info)
+    # stack_info = {
+    #     "api_host": bs_service.ip_address,
+    #     "api_port": bs_service.ports.values()[0].number,
+    #     "stats_host": stats_service.ip_address,
+    #     "stats_port": stats_service.ports.values()[0].number,
+    #     "visualize_host": visualize_service.ip_address,
+    #     "visualize_port": visualize_service.ports.values()[0].number,
+    # }
+    # import_module(frontend).run(plan, cfg.get("FRONTEND"), stack_info)
