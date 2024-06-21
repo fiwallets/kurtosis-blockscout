@@ -40,6 +40,7 @@ def run(plan, args):
     visualize_service = import_module(visualize).run(plan, cfg.get("VISUALIZE"))
 
     plan.print(bs_service.ports.values())
+    plan.print("I have no love ")
 
     # stack_info = {
     #     "api_host": bs_service.ip_address,
