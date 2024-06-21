@@ -40,6 +40,11 @@ def run(plan, cfg, stack_info):
         "NEXT_PUBLIC_TRANSACTION_INTERPRETATION_PROVIDER": "blockscout",
         "NEXT_PUBLIC_ROLLUP_TYPE": "zkEvm",
         "NEXT_PUBLIC_ROLLUP_L1_BASE_URL": l1_explorer,
+        "NEXT_PUBLIC_FEATURED_NETWORKS": "https://raw.githubusercontent.com/fiwallets/frontend-configs/neva-frontend-configs/configs/featured-networks/neva-sepolia.json",
+        "NEXT_PUBLIC_NETWORK_LOGO": "https://raw.githubusercontent.com/fiwallets/frontend-configs/neva-frontend-configs/configs/network-icons/neva.svg",
+        "NEXT_PUBLIC_NETWORK_ICON":"https://raw.githubusercontent.com/fiwallets/frontend-configs/neva-frontend-configs/configs/network-icons/neva-short.svg",
+        "NEXT_PUBLIC_HOMEPAGE_PLATE_BACKGROUND":"linear-gradient(112deg,rgba(0,0,0,1)1.4%,rgba(1,159,159,1)100%)",
+        "NEXT_PUBLIC_HOMEPAGE_PLATE_TEXT_COLOR":"rgba(255,255,255,1)",
     }
     if swap_url:
         env_vars["NEXT_PUBLIC_SWAP_BUTTON_URL"] = swap_url
